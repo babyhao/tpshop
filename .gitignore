@@ -132,4 +132,5 @@ dmypy.json
 report/
 .idea/
 others/
+screen/
 temp.py
