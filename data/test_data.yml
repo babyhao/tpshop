@@ -1,0 +1,16 @@
+test_login:
+  user_01:
+    username: '13207117768'
+    password: '123456'
+    toast: '成功'
+#  user_02:
+#    username: '15697181773'
+#    password: '123456'
+#    toast: '成功'
+test_search:
+  search_data:
+    - '手机'
+#    - '服饰'
+#    - '电脑'
+#    - '家居'
+#    - '鞋类'

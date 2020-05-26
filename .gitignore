@@ -129,8 +129,10 @@ dmypy.json
 .pyre/
 
 # pytest
+.pytest_cache/
 report/
+screen/
 .idea/
 others/
+__pycache__/
 temp.py
-*.png

@@ -2,14 +2,21 @@ import allure, pytest, os, sys
 
 sys.path.append(os.getcwd())
 from base.base_driver import get_driver
-from page.login_page import LoginPage
 from base.base_yaml import data_with_key
+from page.mine_page import MinePage
+from page.category_page import CategoryPage
+from page.search_page import SearchPage
+from page.goods_list_page import GoodsListPage
+from page.goods_info_page import GoodsInfoPage
+from page.confirm_order_page import ConfirmOrderPage
+from page.address_page import AddressPage
 
 
-class TestLogin:
+class TestMinePage:
     def setup(self):
         self.driver = get_driver()
-        self.login_page = LoginPage(self.driver)
+        self.mine_page = MinePage(self.driver)
+        self.mine_page.switch_to_mine_page()
 
     def teardown(self):
         self.driver.quit()
